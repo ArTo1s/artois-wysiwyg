@@ -4,8 +4,8 @@ id: artois-wysiwyg        # must be globally unique
 name: "WYSIWYG Editor Panel"
 version: "0.1.0"
 description: "A right-panel editor for HTML-rich JSON values"
-author: "Your Team"
-homepage: "https://yourapp.example.com"  # replace after deploy
+author: "Artois"
+homepage: "https://artois-wysiwyg.vercel.app/"  # replace after deploy
 
 # Permissions your app will need later (safe to set now)
 scopes:
