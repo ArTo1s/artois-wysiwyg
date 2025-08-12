@@ -1,0 +1,23 @@
+// crowdin-app.yml
+# Basic app metadata
+id: artois-wysiwyg        # must be globally unique
+name: "WYSIWYG Editor Panel"
+version: "0.1.0"
+description: "A right-panel editor for HTML-rich JSON values"
+author: "Your Team"
+homepage: "https://yourapp.example.com"  # replace after deploy
+
+# Permissions your app will need later (safe to set now)
+scopes:
+  - project:read
+  - source:read
+  - translation:read
+  - translation:edit
+
+# UI modules: register a panel inside the Editor
+modules:
+  - id: editor-right-panel
+    type: editor_right_panel
+    name: "WYSIWYG"
+    entry: https://localhost:5173/panel   # dev URL while running Vite
+    # Crowdin will iframe this URL inside the Editor
